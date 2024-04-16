@@ -1,0 +1,167 @@
+/* CSS Reset  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* For Logo  */
+
+#logo {
+    display: flex;
+    font-size: 29px;
+    align-items: center;
+    margin: 3px 8px;
+    font-family: 'Pacifico', cursive;
+    width: 130px;
+    
+}
+
+#logo a {
+    text-decoration: none;
+    color: black;
+}
+
+#logoimage {
+    display: block;
+    height: 22px;
+    width: 22.5px;
+    margin-right: 6px;
+  
+
+}
+/* Navbar Styling */
+
+#navbar {
+    display: flex;
+}
+#navbar {
+    position: relative;
+}
+#navbar ul {
+    display: flex;
+    margin-left: 21%;
+    background-color:rgb(255 117 68);
+    padding: 0px 100px;
+    border-radius: 20px;
+    
+}
+#navbar ul li a:hover {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    transition: all 0.4s ease-in-out ;
+    
+}
+
+#navbar ul li {
+    list-style: none;
+    
+    padding: 10px 32px;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    display: block;
+    text-decoration: none;
+    border-radius: 5px;
+    color: black;
+}
+
+/* Home */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: 2px 200px;
+    height: 430px;
+    text-align: center;
+}
+
+#home::before {
+    top: 60px;
+    content: "";
+    position: absolute;
+    background: url('bg/bg1.jpg') no-repeat center center/cover;
+    height: 85%;
+    width: 93%;
+    z-index: -1;
+    opacity: 0.60;
+    animation: change 10s infinite ease-in-out;
+
+}
+
+@keyframes change {
+    0% {
+        background-image: url(bg/bg1.jpg);
+
+    }
+
+    25% {
+        background-image: url(bg/bg1.jpg);
+    }
+
+    50% {
+        background-image: url(bg/bg2.jpg);
+    }
+
+    75% {
+        background-image: url(bg/bg3.jpg);
+    }
+
+    100% {
+        background-image: url(bg/bg2.jpg);
+    }
+}
+
+.h-primary{
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 3px white;
+}
+#home button{
+    margin-top: 10px;
+    padding: 6px 8px;
+    cursor: pointer;
+    background-color: rgb(255 117 68);
+    transition: all 0.8s ease-in-out ;
+    border: 1px solid rgb(255 117 68);
+    border-radius: 8px;
+    font-size: 1rem;
+    box-shadow: 3px 2px 6px white;
+
+}
+#home button:hover{
+   transform: scale(1.1);
+   
+}
+#orders{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: end;
+    height: 400px;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    height: 300px;
+    width: 330px;
+    background-color: rgb(255 117 68);
+    border-radius: 30px;
+}
+
+#image1{
+    height: 230px;
+    width: 344px;  
+}
+#image2{
+    height: 205px;
+    width: 310px
+}
+#image3{
+    height: 140px;
+    width: 289px
+}
